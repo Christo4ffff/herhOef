@@ -1,0 +1,21 @@
+public class HerhOef {
+
+    public static void main(String[] args) {
+        User user = new User();
+        user.firstName = "Christof";
+        user.lastName = "van Dun";
+        System.out.println(user.getFullName());
+    }
+}
+
+
+public class User {
+
+        public String firstName;
+        public String lastName;
+
+        public String getFullName() {
+            return firstName + " " + lastName;
+
+        }
+}
