@@ -1,0 +1,9 @@
+public class Strings {
+    public static void main(String[] args) {
+        String x = "hello";
+        System.out.println(x.charAt(0));
+        System.out.println(String.format("Hej %s",x));  // plaatst een waarde in een gereserv. plaats in een string
+
+        System.out.println(x.length());  // toont de lengte van de string
+    }
+}
