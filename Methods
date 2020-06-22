@@ -1,0 +1,13 @@
+public class Methods1 {
+    public static void main(String[] args) {
+        int x = 10;
+        int y = 20;
+        System.out.println(Integer.compare (x,y));
+
+//numeric methods
+
+        String money = "300";
+        System.out.println(Integer.valueOf(money));     // zet om naar Integer (object)
+        System.out.println(Integer.parseInt(money));    // parse zet string om naar int (primitive)
+    }
+}
