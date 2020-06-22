@@ -1,0 +1,52 @@
+public class Strings {
+    public static void main(String[] args) {
+        String x = "lekkel lekkel die chinees";
+        System.out.println(x.charAt(x.length()-1));
+        System.out.println("x = " + x);                             // soutv prints value
+        System.out.println("Strings.main");                         // soutm prints class & meth
+        System.out.println("args = " + Arrays.deepToString(args));  // soutp prints meth & values
+
+
+        String fullSlogan = x.concat(" altijd.");                   // plakt tekst aan string
+        System.out.println(fullSlogan);                             // zelfde als x +
+
+        System.out.println(fullSlogan.contains("die"));             // geeft T/F
+
+        System.out.println(fullSlogan.indexOf("die"));
+                                                                    // geeft plaats in index
+        System.out.println(fullSlogan.lastIndexOf("die"));          // idem achter-voor
+        
+        //---------------------
+        
+import java.util.Scanner;
+
+public class Strings {
+    public static void main(String[] args) {
+
+// -- chinees
+        String fullSlogan = "lekkel lekkel die chinees. ";
+
+        System.out.println(fullSlogan.strip());             // haalt de witruimte weg
+        System.out.println(fullSlogan.substring(14, 17));   // print stukje string (17 is de plaats erNA)
+        System.out.println(fullSlogan.repeat(2));           // herhaalt # keer
+
+// -- wachtwoord
+        String passWord = "ra ra ra";
+        System.out.println("Raad het wachtwoord 2x: ");
+
+        Scanner scanner = new Scanner(System.in);           // creeer input
+        String guess1 = scanner.nextLine();
+
+        Scanner scanner1 = new Scanner(System.in);
+        String guess2 = scanner1.nextLine();
+
+        System.out.println(passWord.equals(guess1));
+        System.out.println(passWord.equals(guess2));
+    }
+}
+        
+        
+        
+        
+    }
+}
