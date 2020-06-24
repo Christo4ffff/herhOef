@@ -1,0 +1,21 @@
+package Herh0624;
+
+import java.util.Scanner;
+
+public class Switch {
+    public static void main(String[] args) {
+        System.out.println("Whats your name?");
+
+        Scanner scanner = new Scanner(System.in);
+        String name = scanner.nextLine();
+
+        switch (name) {
+            case "Caleb":
+                System.out.print("Welcome my man");
+                break;
+            case "Clare":
+                System.out.println("Go away");
+                break;
+        }
+    }
+}
